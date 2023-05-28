@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07BE8753-AFAC-46F0-8ACB-332CBBDF59F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proiect</RootNamespace>
+    <AssemblyName>proiect</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>packages\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.2.2.1.3\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clinica_IIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Clinica_IIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomTheme.cs" />
+    <Compile Include="DataConnection.cs" />
+    <Compile Include="Forms\CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\Doctor_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\Doctor_Update.Designer.cs">
+      <DependentUpon>Doctor_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\PrescrieReteta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\PrescrieReteta.Designer.cs">
+      <DependentUpon>PrescrieReteta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\ProgramareNoua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\ProgramareNoua.Designer.cs">
+      <DependentUpon>ProgramareNoua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\ProgramariMedic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\ProgramariMedic.Designer.cs">
+      <DependentUpon>ProgramariMedic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\Reteta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\Reteta.Designer.cs">
+      <DependentUpon>Reteta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\DosarPacient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\DosarPacient.Designer.cs">
+      <DependentUpon>DosarPacient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MedicPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MedicPage.Designer.cs">
+      <DependentUpon>MedicPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\UpdateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pop-ups\UpdateAccount.Designer.cs">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StateManagement.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Forms\CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\Dialog.resx">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\Doctor_Update.resx">
+      <DependentUpon>Doctor_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\PrescrieReteta.resx">
+      <DependentUpon>PrescrieReteta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\ProgramareNoua.resx">
+      <DependentUpon>ProgramareNoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\ProgramariMedic.resx">
+      <DependentUpon>ProgramariMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\Reteta.resx">
+      <DependentUpon>Reteta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\DosarPacient.resx">
+      <DependentUpon>DosarPacient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MedicPage.resx">
+      <DependentUpon>MedicPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pop-ups\UpdateAccount.resx">
+      <DependentUpon>UpdateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Clinica_IIDataSet.xsc">
+      <DependentUpon>Clinica_IIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Clinica_IIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Clinica_IIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Clinica_IIDataSet.xss">
+      <DependentUpon>Clinica_IIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
